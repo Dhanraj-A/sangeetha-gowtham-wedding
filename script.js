@@ -84,6 +84,7 @@ function updateScrollScene() {
 
     if (Math.abs(clamped) < .78) {
       page.classList.add("scroll-active");
+      page.style.setProperty("--scene-shift", `${clamped * -18}px`);
     } else {
       page.classList.remove("scroll-active");
     }
